@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Форма заявки</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <form action="index.html">
+            <button>Назад</button>
+        </form>
+        <dialog open aria-labelledby="dialogid">
+            <form action="index.html">
+                <button type="submit" aria-label="close" formmethod="dialog" formnovalidate>X</button>
+                <h2 id="dialogid">Вступление в секцию</h2>
+                <p>
+                    Заполните форму, и мы обязательно свяжемся с вами в ближайшее время
+                </p>
+                <p>
+                    <label>Ваша фамилия: 
+                        <input type="text" name="surname" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Ваше имя: 
+                        <input type="text" name="name" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Ваш e-mail (ivanov.i.i@edu.mirea.ru):
+                        <input type="email" name="mail" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Ваш телефон:
+                        <input type="tel" name="tel" required />
+                    </label>
+                </p>
+                <p>
+                    <label>По желанию, опишите ваш опыт в занятии спортом:
+                        <textarea name="comment" id=""></textarea>
+                    </label>
+                </p>
+                <p>
+                    <input type="checkbox" required /> Согласие на обработку персональных данных
+                </p>
+                <form action="index.html">
+                    <button type="submit" formmethod="post" id="Final">Отправить заявку</button>
+                </form>
+            </form>
+        </dialog>
+    </body>
+</html>

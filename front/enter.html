@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Вход в систему</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <form action="index.html">
+            <button>Назад</button>
+        </form>
+        <dialog open aria-labelledby="dialogid">
+            <form action="index.html">
+                <button type="submit" aria-label="close" formmethod="dialog" formnovalidate>X</button>
+                <h2 id="dialogid">Войти в систему</h2>
+                <p>
+                    <label>Ваш e-mail (ivanov.i.i@edu.mirea.ru):
+                        <input type="email" name="mail" required />
+                    </label>
+                </p>
+                <p>
+                    <label>Ваш пароль:
+                        <input type="password" name="password" required />
+                    </label>
+                </p>
+                <form action="index.html">
+                    <button type="submit" formmethod="post" id="Final">Войти</button>
+                </form>
+                <form action="registrate.html">
+                    <p>Нет аккаунта? <br>Зарегистрируйтесь тут:</p>
+                    <button>Зарегистрироваться</button>
+                </form>
+            </form>
+        </dialog>
+    </body>
+</html>
